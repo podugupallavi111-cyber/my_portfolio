@@ -1,0 +1,119 @@
+:root{
+  --accent: #0d6efd;
+  --bg: #f8f9fa;
+}
+body{background:var(--bg);font-family:Inter, system-ui, Arial, sans-serif}
+.brand{font-size:18px;letter-spacing:0.2px}
+.image-placeholder{background:linear-gradient(135deg,#e9ecef,#dee2e6);display:flex;align-items:center;justify-content:center;color:#666}
+.card-project{background:#fff;border-radius:8px;padding:14px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+.nav-link{color:#333}
+.nav-link:hover{color:var(--accent)}
+@media (max-width: 991px){
+  /* collapse nav into a simpler layout on small screens */
+  header .nav{display:none}
+  header{padding-left:1rem;padding-right:1rem}
+}
+.skill-box {
+  background: #ffffff;
+  transition: transform 0.2s ease;
+  border-left: 5px solid #0d6efd;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+}
+
+.progress {
+  height: 10px;
+  border-radius: 20px;
+  background: #e9ecef;
+}
+
+.progress-bar {
+  width: 0;
+  border-radius: 20px;
+  transition: width 1.5s ease;
+}
+
+#skills h2 {
+  letter-spacing: 1px;
+}
+.project-card {
+  background: #ffffff;
+  border-left: 4px solid #0d6efd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+.project-card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+/* Education section styles */
+.education-card {
+  background: #ffffff;
+  border-left: 4px solid var(--accent, #0d6efd);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(13,110,253,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.education-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(13,110,253,0.10);
+}
+#education h2 { letter-spacing: 0.4px; }
+@media (max-width: 768px) {
+  .education-card { padding: 16px; }
+}
+/* Experience Section */
+.experience-card {
+  background: #ffffff;
+  border-left: 4px solid var(--accent, #198754);
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+#experience h2 {
+  letter-spacing: 0.5px;
+}
+/* Section below navbar */
+.below-navbar-section {
+  margin-top: 30px;
+}
+
+/* Right-side image styling */
+.right-side-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .right-side-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+}
+.image-placeholder {
+  display: inline-block;      /* shrink to image size */
+  background: linear-gradient(135deg,#e9ecef,#dee2e6);
+  padding: 10px;              /* optional small gap */
+  border-radius: 10px;
+}
+.image-placeholder img {
+  width: 180px;               /* control image size here */
+  border-radius: 10px;
+}
